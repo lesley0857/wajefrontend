@@ -6,7 +6,7 @@ function Books() {
   const [books,setbooks] = useState([])
   useEffect(()=>{
 
-      axios.get('http://127.0.0.1:8000/books')
+      axios.get('https://wajeapi.herokuapp.com/books')
            .then(res => {
                   setbooks(res.data)
                   console.log(res.data)               
