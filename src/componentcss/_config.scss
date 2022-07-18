@@ -1,0 +1,23 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    outline: 0;
+    list-style:none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+--primary-color : green ;
+}
+
+@mixin colorr($co) {
+    background-color:$co ;
+    
+}
+
+$secondary:gray;
