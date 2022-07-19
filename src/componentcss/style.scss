@@ -6,17 +6,17 @@ body{
 } 
 
 #root{
-   background-color:purple;
+   background-color:rgb(13, 6, 13);
    height: 100vh;
    display: grid;
    grid-template-columns: 1fr;
 }
 .Layout{
-  background-color: grey;
+  background-color: rgb(219, 23, 23);
   display: grid;
   grid-template-columns: 1fr;
-   gap: 5px;
    grid-template-rows: 1fr ;
+
 }
 .nav{
    background-color: aqua;
@@ -32,16 +32,22 @@ body{
       background-color: aqua;
       line-height: 2.5em;
       width: 100%;
-      margin-top: 1px;
-      display: grid;
-      grid-template-columns: 0.2fr 1fr;
-      position: relative;
+
+      display: flex;
+      flex-direction: row;
+     
    }
    .icon{
-      background-color: plum;
+      background-color: rgb(221, 160, 160);
+      line-height: 2.5em;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      
+      @media (min-width:800px) {
+         width: 10%;
+         line-height: 2.5em;
+      }
 
       #menuclose{
          display: flex;
@@ -74,7 +80,7 @@ body{
      
       @media (min-width:800px) {
          background-color: white;
-         width: auto;
+         width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -84,41 +90,32 @@ body{
       }
    }
    li{
-      background-color: palegreen;
+      background-color: gray;
       display: flex;
       justify-content: center;
       @media (min-width:800px) {
          display: grid;
          grid-template-columns: repeat(4 1fr);
-         background: khaki;
+         background: grey;
          width: 10%;
       }
    }
 }
 .api{
-   background-color: rgb(123, 137, 124);
-   line-height: 93vh;
+   background-color: rgb(22, 235, 36);
    width: 100%;
    margin-top: 2.5em;
    display:grid;
    grid-template-rows: auto;
 
-   
-   
-   h2{
-      background-color: rebeccapurple;
-      text-align: center;
-       line-height: 10vh;
-   }
-
-   h3{
-       background-color: peru;
-         line-height: 1fr;
+   @media (min-width:800px) {
+     
       
    }
-   @media (min-width:800px) {
-      margin-top: 0;
-   }
+
+   
+
+
 }
 .footerdiv{
    width: 100%;
@@ -128,10 +125,6 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-  
-}
-.footerulone{
 
   
 }

@@ -6,7 +6,7 @@ function Books() {
   const [books,setbooks] = useState([])
   useEffect(()=>{
 
-      axios.get('https://wajeapi.herokuapp.com/books')
+      axios.get('http://127.0.0.1:8000/books')
            .then(res => {
                   setbooks(res.data)
                   console.log(res.data)               
@@ -18,7 +18,7 @@ function Books() {
     <div className='api'> 
         <h2>Name of Books</h2>
         {books.map(book=> (
-                        <h3 key={book.id}> {book.name}</h3> ))}
+                        <span key={book.id}> {book.name}</span> ))}
     </div>
 
   )

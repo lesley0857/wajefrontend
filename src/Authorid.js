@@ -7,7 +7,7 @@ function Authorid(props) {
   const [authordetail,setauthordetail] = useState([])
   console.log()
   useEffect(()=>{
-    axios.get(`https://wajeapi.herokuapp.com/author/${parameter}`)  
+    axios.get(`http://127.0.0.1:8000/author/${parameter}`)  
         .then( response=>(setauthordetail(response.data) ,
                           console.log(response.data) ) )
   },[])
